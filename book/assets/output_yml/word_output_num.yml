@@ -1,0 +1,5 @@
+bookdown::word_document2:
+  reference_docx: "book/assets/word/ref-doc-num.docx"
+  toc: false
+  keep_md: true
+  pandoc_args: [ "--csl", "book/bib/citethemright10th.csl", "-f", "markdown+raw_tex+fenced_divs"  ]

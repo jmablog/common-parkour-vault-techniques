@@ -1,0 +1,232 @@
+---
+site: bookdown::bookdown_site
+title: '`r yaml::read_yaml("_meta.yml")$book_title`'
+author: '`r yaml::read_yaml("_meta.yml")$book_author`'
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+documentclass: article
+classoption: 12pt
+bibliography: ["book/bib/references.bib", "book/bib/packages.bib"]
+link-citations: yes
+github-repo: null
+---
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+
+# Default to show/hide code in output
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      fig.pos = "tbp",
+                      out.extra = "",
+                      out.width = "100%",
+                      fig.retina = 2,
+                      fig.align = "center")
+# knitr and kable/kableExtra options
+# set before calling library to ensure correct options by default
+options(knitr.kable.NA = '')
+options(knitr.table.format = "pipe")
+options(kableExtra.auto_format = FALSE)
+
+# set scientific notation off
+options("scipen"=0)
+
+# set orthogonal contrasts
+options(contrasts = c("contr.sum", "contr.poly"))
+
+# p adjustment choice
+pAdjustChoice <- "holm"
+
+# Tidyverse packages (remove as appropriate)
+library(magrittr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(purrr)
+library(tibble)
+library(stringr)
+library(forcats)
+#library(readr)
+#library(readxl)
+library(broom)
+library(rlang)
+
+# stats specific libraries
+library(effectsize)
+library(ez)
+#library(skimr)
+library(irr)
+library(emmeans)
+#library(afex)
+library(DescTools)
+#library(pwr)
+
+# other packages
+#library(fs)
+library(glue)
+library(janitor)
+library(here)
+library(ggthemr)
+#library(PNWColors) # https://github.com/jakelawlor/pnwcolors
+# pal <- PNWColors::pnw_palette(name="Sailboat",n=8,type="discrete")
+library(ggtext)
+#library(ggsignif)
+library(patchwork)
+library(conflicted)
+#library(pander)
+library(cowplot)
+# conflicted::conflict_prefer("cooks.distance.influence.merMod", "car")
+conflicted::conflict_prefer("set_names", "purrr")
+conflicted::conflict_prefer("filter", "dplyr")
+library(knitr)
+library(kableExtra)
+
+# set plot theme
+ggthemr('greyscale', layout = 'minimal')
+
+# set PDF and word variables to FALSE by default; will be overwritten for 
+# appropriate output in next chunk or left as-is for working in RStudio
+pdf <- FALSE
+word <- FALSE
+
+# read chunks in to include from external code sources - 
+# just remember that at SOME point, anything to be used in the final output MUST
+# be imported into the index or src files somewhere - so any data creation/import
+# chunks in the external code also need to be read in before their output will work
+
+analysis_files <- list.files(path=here::here("analysis"),
+                    pattern = "^[^_][0-9a-zA-Z-]+.R$", full.names = TRUE)
+
+for (file in analysis_files) {
+  knitr::read_chunk(file)
+}
+
+# load data
+load(here("data", "pkvs.RData"))
+# load(here("data", "pkvsExtra.RData"))
+load(here("data", "forceCurves.Rdata"))
+
+# filter out RFD & resultant as not using
+# drop unused measure as factor & refactor landing style labels
+# and halve force figures for precision landings
+pkvs <- pkvs %>% 
+  filter(str_detect(measure, "RFD", negate = T),
+         str_detect(measure, "Resultant", negate = T)) %>% 
+  mutate(measure = fct_drop(measure)) %>% 
+  mutate(leg = fct_recode(leg, Precision = "Double", Running = "Single")) %>% 
+  mutate(result_bw = case_when(leg == "Precision" ~ result_bw / 2,
+                               TRUE ~ result_bw),
+         result_n = case_when(leg == "Precision" ~ result_n / 2,
+                               TRUE ~ result_n))
+
+pkvsFull <- pkvsFull %>% 
+  mutate(leg = fct_recode(leg,
+                          Precision = "Double",
+                          Running = "Single")) %>% 
+  mutate(result_bw = case_when(measure != "ResultantAngle" & leg == "Precision" ~ result_bw / 2, TRUE ~ result_bw),
+         result_n = case_when(measure != "ResultantAngle" & leg == "Precision" ~ result_n / 2, TRUE ~ result_n))
+
+resultantForces <- resultantForces %>% 
+  mutate(leg = fct_recode(leg, Precision = "Double", Running = "Single")) %>%
+  mutate(resultantForce_bw = case_when(leg == "Precision" ~ resultantForce_bw / 2,
+                                       leg == "Running" ~ resultantForce_bw),
+         vertical_bw = case_when(leg == "Precision" ~ vertical_bw / 2,
+                                 leg == "Running" ~ vertical_bw),
+         horizontal_bw = case_when(leg == "Precision" ~ horizontal_bw / 2,
+                                   leg == "Running" ~ horizontal_bw))
+
+# set various global variables for use in graphs etc
+measures <- c("VertPeak", # "VertRFD", 
+              "HorzPeak")#, # "HorzRFD", 
+              #"ResultantPeak", "ResultantAngle")
+# measures <- c("ResultantPeak", "ResultantAngle")
+names(measures) <- measures
+movements <- c("Drop", "Step", "Dash", "Kong")
+names(movements) <- movements
+# landingStyles <- c("Double", "Single")
+landingStyles <- c("Precision", "Running")
+names(landingStyles) <- landingStyles
+allMeasuresMovements <- data.frame(movement = rep(movements,
+                                                  each = length(measures)*2),
+                                   leg = rep(landingStyles,
+                                             each = length(measures)),
+                                   measure = rep(measures,
+                                                 times = length(movements)),
+                                   stringsAsFactors = FALSE) %>%
+  unite(combined, movement, leg, measure, sep = "-", remove = FALSE)
+charCols <- names(characteristics[-1])
+
+```
+
+```{r detect-output, include=FALSE}
+
+# detect current knitr rendering format
+# will output as 'bookdown::pdf_document', 'bookdown::word_document' etc
+
+fmt <- rmarkdown::all_output_formats(knitr::current_input())[1]
+pdf <- grepl("pdf", fmt)
+word <- grepl("word", fmt)
+git <- grepl("gitbook", fmt)
+
+```
+
+```{r float-spacing}
+
+# if(pdf) {
+#   plot_default <- knit_hooks$get("plot")
+#   knit_hooks$set(plot = function(x, options) { 
+#     x <- c("\\vspace{20pt}", plot_default(x, options), "\\vspace{20pt}")
+#   })
+# }
+
+if(pdf) {
+  knit_hooks$set(floatspacer = function(before, options, envir) {
+      if (before) {
+          "\\vspace{20pt}"
+      } else {
+          "\\vspace{20pt}"
+      }
+  })
+} else {
+  knit_hooks$set(floatspacer = function(before, options, envir) {
+      if (before) {
+          ""
+      } else {
+          ""
+      }
+  })
+}
+
+```
+
+
+```{r word-tocs, eval=FALSE, include=FALSE}
+
+# if rendering to .docx, include blank pages with headings for
+# table of contents and lists of figures/tables/appendices
+if(word) {
+  word_toc <- glue::glue('
+\\newpage
+::: {{custom-style="Title"}}
+Table of Contents
+:::
+\\newpage
+::: {{custom-style="Title"}}
+List of Figures
+:::
+\\newpage
+::: {{custom-style="Title"}}
+List of Tables
+:::
+\\newpage
+::: {{custom-style="Title"}}
+List of Appendices
+:::
+\\newpage
+             ')
+} else {
+  word_toc <- NULL
+}
+
+```
+
+```{r preface, child=if (git) here::here('book', 'src', '_preface.Rmd')}
+```

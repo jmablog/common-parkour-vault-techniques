@@ -1,0 +1,70 @@
+% code in this file will appear before the main text beginning in index.Rmd
+% comment and uncomment as required
+
+% TITLE PAGE if title page turned off in preamble.tex ==========================
+% (see https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown)
+% alternatively see https://eddjberry.netlify.app/post/writing-your-thesis-with-bookdown/
+% for how to customise title page just with yaml metadata
+
+% uncomment the next line to include a markscheme pdf if present
+% \includepdf[pages=-]{book/assets/latex/st7p37-mark-scheme.pdf}
+
+% START TITLE PAGE =============================================================
+
+\thispagestyle{empty}
+\begin{center}
+\vspace*{5cm}
+{\headerfont\huge\bfseries Common parkour vaulting techniques, landing styles, and their effects on landing forces}
+
+\vfill
+
+\textbf{Corresponding author:} James Adams, james@jmablog.com
+
+\textbf{Affiliations:} London Metropolitan University
+
+\textbf{Word count:} 4,627 words
+
+\end{center}
+
+\newpage
+
+% END TITLE PAGE ===============================================================
+
+% reset page counter to exclude title page
+\setcounter{page}{1}
+
+\thispagestyle{empty}
+\addcontentsline{toc}{section}{Acknowledgments}
+\begin{center}
+\vspace*{5cm}
+{\headerfont\large\bfseries Acknowledgments}
+\end{center}
+
+I am grateful to Karl Grainger and the London Metropolitan University Sports Department for their support and guidance. I also wish to thank Sophie Koonin, Juwad Malik, Thuli Lamb, and Andrew Pearson for their help and patience as sounding boards during the writing process.
+
+\newpage
+
+%\let\maketitle\oldmaketitle
+%\maketitle
+
+% various Tables of Contents ===================================================
+
+% set ToC heading depth, leave commented for all headings in ToC
+%\setcounter{tocdepth}{1}
+
+\addcontentsline{toc}{section}{Table of contents}
+\tableofcontents
+\newpage
+
+\renewcommand*\listfigurename{List of figures}
+\listoffigures
+\addcontentsline{toc}{section}{List of figures}
+\newpage
+
+\renewcommand*\listtablename{List of tables}
+\listoftables
+\addcontentsline{toc}{section}{List of tables}
+\newpage
+
+% if using \part, suppresses the numbers showing up in headings and ToC ========
+\renewcommand{\thepart}{}

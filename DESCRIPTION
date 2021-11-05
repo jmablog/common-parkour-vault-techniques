@@ -1,0 +1,25 @@
+Package: common-parkour-vault-techniques
+Title: Common parkour vault techniques
+Type: Compendium
+Version: 0.0.1
+Authors@R: 
+    person(given = "James",
+           family = "Adams",
+           role = c("aut", "cre"),
+           email = "james@jmablog.com")
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    fs,
+    glue,
+    yaml,
+    ymlthis,
+    bookdown,
+    rmarkdown,
+    here,
+    rmdwc,
+    janitor

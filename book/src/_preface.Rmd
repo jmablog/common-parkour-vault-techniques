@@ -1,0 +1,38 @@
+# Preface {-}
+
+This project was my final year dissertation for my Sport Therapy BSc undergraduate degree, the abstract of which was also accepted at the [BASES](https://www.bases.org.uk/) Conference 2021. There’s not a lot of scientific research out there for the parkour community to look at (although that is rapidly changing), so I figure it’s nice to share.
+
+You can also [download a PDF of this project](http://dx.doi.org/10.13140/RG.2.2.21957.47849) or a [poster summary version](http://dx.doi.org/10.13140/RG.2.2.30244.81284) from ResearchGate.
+
+## Acknowledgements {-}
+
+```{r metlogo, out.width="50%"}
+knitr::include_graphics(here::here("book", "assets", "imgs", "metlogo.png"))
+```
+
+
+My thanks to the sports department at [London Metropolitan University](https://www.londonmet.ac.uk/), and in particular, my project supervisor Karl Grainger.
+
+The London Metropolitan University logo is used as a show of gratitude only and does not indicate endorsement of the work herein by the University.
+
+## Disclaimer {-}
+
+It’s important to know that this has **not** been peer reviewed. I’m proud of my work and I think my findings are, at the very least, interesting. But, please bear that in mind as you read it and engage the results found, and conclusions drawn from those results, with an appropriately critical eye.
+
+## Data {-}
+
+You can download the full force platform data I collected if you would like to perform your analysis. If you do so, please get in touch and let me know what you use it for and what you find, I’d be delighted.
+
+[Download from Figshare](https://doi.org/10.6084/m9.figshare.12231089) | [Download from Github repo](https://github.com/jmablog/common-parkour-vault-techniques)
+
+Once downloaded, you’ll find the ‘data’ folder contains all the data in a variety of formats, including the raw force curves for all participants in both .txt and .dat formats. The .dat files are the force profile files saved by [Bioware](https://www.kistler.com/en/product/type-2812a/) software directly, while the .txt files are the exported equivalent, containing some metadata at the top of the file.
+
+The cleaned and compiled data can also be found in Rdata, Excel, CSV and SPSS formats. Some formats also include the data in long or wide layouts, as preferred. Most variables in each format should be self explanatory, with the most important being the distinction between the force values being in Newtons (result_n) or in multiples of participant bodyweight (result_bw).
+
+**Please be aware:** The compiled datasets (in the ‘processed’ folder and usually anything with ‘pkvs’ in the filename) for R/Excel/CSV/SPSS etc have been through a cleaning script, the one I used to perform the analyses used in the final paper. Mainly this affects the Precision Landing style figures, as these are **halved** to approximate the force through a single limb, in order to match the Running Landing style figures. The raw data (.txt and .dat files) contains the original **unhalved** figures for Precision Landings, if desired.
+
+**Why are there so many file versions of the processed data, James?**
+
+Because I taught myself R to analyse this project, and went through a phase of experimenting with how it interacts with different file formats. Since I had them, I thought I might as well put them out there. They’re all the same underlying data; just pick whichever you prefer, or work from the raw files to start from scratch.
+
+# Abstract {-}

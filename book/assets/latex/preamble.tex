@@ -1,0 +1,167 @@
+% set the main body font =======================================================
+\usepackage{fontspec}
+\setmainfont{Helvetica}
+%\newfontfamily\headerfont{Helvetica}
+%\newfontfamily\headerfont{Sentient}
+\newfontfamily\headerfont{Inter}
+%\setmainfont{Crimson Pro}
+%\setmainfont{Open Sans}
+%\setmainfont{New York Medium}
+
+% set the line spacing =========================================================
+%\renewcommand{\baselinestretch}{1.5}
+\renewcommand{\baselinestretch}{2}
+% arraystretch affects the spacing between table rows
+\renewcommand{\arraystretch}{0.8}
+
+% left justify text with ragged right edge =====================================
+\usepackage[document]{ragged2e}
+
+% set the page margins =========================================================
+\usepackage[a4paper, margin=1in]{geometry}
+
+% set formatting for section and subsection headings ===========================
+% adding a period after section numbering
+\usepackage{titlesec}
+\titlelabel{\thetitle.\quad}
+
+% reformat H1s to be bigger, can copy/adapt for \subsection too if desired
+% \makeatletter
+% \renewcommand{\section}{\@startsection
+% {section}%                   % the name
+% {1}%                         % the level
+% {\z@}%                       % the indent / 0mm
+% {-\baselineskip}%            % the before skip / -3.5ex \@plus -1ex \@minus -.2ex
+% {1.5\baselineskip}%          % the after skip / 2.3ex \@plus .2ex
+% {\Huge\bfseries}} % the style
+% \makeatother
+
+% can also use titlesec package to do so
+\titleformat*{\section}{\headerfont\bfseries\Large}
+\titleformat*{\subsection}{\headerfont\bfseries\large}
+\titleformat*{\subsubsection}{\headerfont\bfseries\itshape}
+\titleformat{\subsubsubsection}[hang]{\headerfont\bfseries}{\thetitle}{1em}{}
+
+% comment/uncomment the next line to auto-insert a page break before each new H1
+\newcommand\sectionbreak{\clearpage}
+
+% changing options for table/figure captions ===================================
+% uncomment the below lines to just number figures/tables sequentially
+% throughout entire document
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+
+\usepackage[labelfont=it,textfont=it,singlelinecheck=off,justification=raggedright,labelsep=period]{caption}
+
+% resets table/figure counters within each section/subsection ==================
+\usepackage{chngcntr}
+\counterwithin*{table}{section}
+%\counterwithin*{table}{subsection}
+\counterwithin*{figure}{section}
+%\counterwithin*{figure}{subsection}
+
+% page numbering ===============================================================
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%\fancyfoot[L]{\footnotesize{\nouppercase{\leftmark}}}
+%\fancyfoot[R]{\footnotesize{Page \thepage \hspace{1pt} of \pageref{LastPage}}}
+\fancyhead[R]{\footnotesize{\thepage}}
+
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+% table of contents pages formatting ===========================================
+% edit sizing and font of ToC - take out \bfseries to stop H1s being bold, etc.
+\usepackage{titletoc}
+% \dottedcontents{part}[3em]{\large\bfseries}{2em}{1pc}
+\dottedcontents{section}[3.8em]{\bfseries}{2em}{1pc}
+\dottedcontents{subsection}[6.1em]{}{3em}{1pc}
+
+% then customise title page in before-body.tex
+
+% kableExtra latex packages  ===================================================
+%\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{pdfpages}
+\usepackage{tabu}
+\usepackage{flafter}
+\usepackage{placeins}
+
+% title page options  ==========================================================
+% see https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown for details on the following
+% uncomment these two lines to turn off title page:
+
+\let\oldmaketitle\maketitle
+\AtBeginDocument{\let\maketitle\relax}
+
+% change default float placement parameters ====================================
+% see https://bookdown.org/yihui/rmarkdown-cookbook/figure-placement.html
+
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\setcounter{topnumber}{1}
+\setcounter{bottomnumber}{1}
+\setcounter{totalnumber}{4}
+
+% float spacing parameters =====================================================
+% article class defaults:
+%\textfloatsep: 20.0pt plus 2.0pt minus 4.0pt
+%\floatsep: 12.0pt plus 2.0pt minus 2.0pt
+%\intextsep: 12.0pt plus 2.0pt minus 2.0pt
+\setlength{\textfloatsep}{40.0pt plus 2.0pt minus 4.0pt}
+\setlength{\floatsep}{30.0pt plus 2.0pt minus 2.0pt}
+\setlength{\intextsep}{20.0pt plus 2.0pt minus 2.0pt}
+
+% change default spacing before each new paragraph (sets as text height) =======
+\setlength\parskip{1em plus 0.1em minus 0.2em}
+
+% coloured boxes package - uncomment if using coloured boxes shortcodes ========
+% \usepackage[breakable]{tcolorbox}
+
+% \definecolor{Aside-bg}{RGB}{255, 248, 239}
+% \definecolor{Aside-frame}{RGB}{254, 237, 218}
+% \definecolor{Questions-bg}{RGB}{250, 250, 250}
+% \definecolor{Questions-frame}{RGB}{234, 234, 234}
+
+% packages/commands to switch page background colour and back ==================
+% \usepackage{pagecolor}
+% \usepackage{afterpage}
+% use in document body with:
+% \newpagecolor{colour}\afterpage{\restorepagecolor}
+
+% resetsection numbering at new \part{} with titlesec ==========================
+% and format part title appearance
+\makeatletter
+\@addtoreset{section}{part}
+\makeatother
+\titleformat{\part}[display]{\headerfont\LARGE\bfseries}{}{0pt}{}
+%\titlespacing{\part}{0pt}{0pt}{*2}
+
+% rotating model figures =======================================================
+\usepackage{rotfloat}
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+
+% change font size of block quotes =============================================
+\AtBeginEnvironment{quote}{\small}

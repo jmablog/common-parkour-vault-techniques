@@ -1,0 +1,291 @@
+\addcontentsline{toc}{section}{Abstract}
+\begin{center}
+%\vspace*{2cm}
+{\headerfont\Large\bfseries Abstract}
+\end{center}
+
+The emerging sport of parkour has developed a landing technique focused on soft, quiet and controlled landings. The proficiency of practitioners (*traceurs*) for two-legged drop landing tasks is becoming increasingly established, but it is unknown whether the same aptitude will be demonstrated for different movements and with different landing techniques. This study investigates the ground reaction forces (GRFs) produced during three common parkour vaulting techniques utilising two common landing styles, with the aim of understanding how GRFs may change between the different scenarios and the subsequent implications for injury risk. 10 traceurs (age 29.4 ± 7.2 yrs, height 173.8 ± 8.1 cm, weight 74.2 ± 8.4 kg, experience 9.7 ± 3.6 yrs) performed a drop landing, step vault, dash vault, and kong vault onto a force plate with a two-legged precision landing (precision) and a single-legged running landing (running). Peak vertical (vGRF) and braking (bGRF) GRFs per limb were analysed by repeated-measures two-way ANOVA. A significant interaction effect between movement choice and landing style was found for both peak vGRF (*p* = 0.007) and peak bGRF (*p* < 0.001). All movements increased in vGRF when using a running landing, but only the drop and kong vault increased in bGRF while the step and dash vaults decreased in bGRF. The kong vault resulted in the greatest peak vGRFs and bGRFs, differing significantly from all other movements with a precision landing and, even in comparisons that did not achieve significance, always producing at least a medium to large effect size. The dash vault produced the least peak vGRF and bGRF of all movements in both landing styles, differing significantly from all others in bGRF and the drop and kong vault in vGRF. Movement choice and landing style affect landing GRFs for common parkour vaulting techniques. While GRFs increased in running style landings, they still did not exceed those typically experienced in jogging, indicating that traceurs mimic their performance in two-legged drop landings and continue to effectively mitigate GRFs when vaulting.
+
+\textbf{Keywords:} \textit{parkour $\cdot$ freerunning $\cdot$ vaulting $\cdot$ traceur $\cdot$ ground reaction forces}
+
+
+\newpage
+
+# Literature review
+
+## Background
+
+Parkour is one of the newest sports practised today, having only been recognised by Sport England in 2017 [@ParkourUK2017]. Parkour is the traversal of an environment and the obstacles within it, but the nature of that traversal can differ between practitioners (known as traceurs) and involve a wide array of movements [@OLoughlin2012]. While influenced by movements from a broad range of disciplines, including dance and acrobatics [@Aggerholm2017], some movements have emerged as identifiably distinct parkour techniques [@OGrady2012]. The establishment in the UK of accredited coaching qualifications and a national governing body has helped codify some parkour techniques [@Sterchele2017], but data is still sparse on the physical demands of parkour with traceurs often reliant on personal experimentation or anecdotal evidence spread via word of mouth and the internet to guide their training [@Gilchrist2011]. Data on the kinetic and kinematic effects of parkour practice may help coaches and traceurs further develop the sport, as understanding the forces produced by a sporting technique can help improve performance or reduce injury risk [@McNittGray2008]. Analysing the ground reaction forces (GRFs) produced when performing these parkour movements can give an insight into their effect on traceurs.
+
+The level of GRF produced is described as a key indicator of the level of mechanical stress applied to the body during movement [@McClay1994]. GRFs are the forces exerted by the ground on a body in contact with it, measured by executing the movement in question on a force plate. Force plates measure in three axes: vertical, anterior-posterior, and medial-lateral [@Bartlett2007]. The harder an athlete pushes against the ground about one of these axes to accelerate or decelerate themselves, then by Newton's Third Law, the more force is applied back onto the athlete's body in the same axis [@Blazevich2007]. Vertical (vGRF) and anterior-posterior axes are of the most interest to biomechanists for jumping or running related activities when studying performance or causes of injury [@Hunter2005]. Anterior-posterior GRF is further subdivided into braking and propulsive forces. Braking GRFs (bGRF) occur as the foot first contacts the floor and resists forward motion, with propulsive GRFs following as the centre of mass passes over the midpoint of the foot and the lower limb pushes off the floor to accelerate forward [@Cavanagh1980]. GRFs fluctuate throughout a movement, but the maximum or peak level of GRF produced during execution is often analysed as an important measure of the maximum mechanical stress applied to a body resulting from a movement.
+
+## Parkour research
+
+Research into GRFs in parkour has commonly aimed to compare traceurs with athletes from other sports or the untrained, with a predominant focus on vGRF in jumping and landing tasks. Jumping is often used as a predictor of general athletic ability [@McLellan2011], with traceurs shown to reach significantly greater heights in drop and countermovement jumps than gymnasts and power athletes [@Grospretre2016]. @Grospretre2018 attribute this to the large amounts of eccentric lower limb training traceurs undertake, as well as increased neuromuscular coordination for jumping tasks. The forefoot-only landing technique employed by traceurs, known as the precision landing, has also been studied.  Forefoot landing is not a new concept, with forefoot landings known to reduce vGRF in basketball players for some time [@Gross1988]. However, the focus on keeping the heel raised as opposed to allowing it to lower to the floor may differentiate the parkour precision landing from other traditional landing strategies. This position reduces the contact area of the foot with the floor and consequently requires good postural control to maintain stability after landing [@Maldonado2015], which may explain why it has not seen widespread use before adoption within parkour.
+
+Precision landings have been shown to produce lower vGRF when compared to traditional landings in a study by @Puddle2013. However, traceurs also performed the traditional landings in this study, which may not have been habitual to them and may have distorted the results. @Standing2015 subsequently found very similar results to Puddle and Maulder, with decreased vGRF in landing tasks by traceurs when comparing landings by traceurs to recreational athletes. Standing and Maulder further speculated that the significantly longer time traceurs took to reach maximum vGRF on landing allowed for improved dissipation of mechanical forces acting upon the body. Increased time to peak vGRF was attributed to high eccentric strength in the lower limb, as the more an athlete can eccentrically prolong a landing, the lower peak vGRF they produce [@Cortes2007]. The role of the knee was also emphasised, with greater knee flexion found in landings by traceurs contributing to the majority of energy dissipation compared to the ankle and hip joints.
+
+## Landing injuries
+
+The ability of traceurs to minimise vGRF when landing is critical for a sport focused on jumping. Large amounts of vGRF during landings are associated with an increased risk of acute lower limb injury [@Elvin2007]. Most commonly, trauma occurs to the anterior cruciate ligament (ACL) of the knee [@Ingram2008]. ACL injuries occur more than any other acute knee injury [@Majewski2006] and are caused by excessive anterior translation of the tibia in relation to the femur [@Sell2007] due to high valgus motion and abduction forces at the knee joint [@Shin2009]. Due to their proximity and the mechanism of injury, injury to the ACL is also often associated with damage to other ligaments and the menisci of the knee [@Stevens2006]. Good deceleration technique to reduce vGRF is a key component of decreasing the likelihood of ACL injury when landing [@Silvers2011]. Further, a study of lower limb biomechanics in stop jump tasks by @Yu2006 found that reducing joint stiffness by increasing active knee flexion during landing is important for reducing the risk of ACL injury. The precision landing results in large amounts of flexion and energy dissipation in the knee [@Maldonado2018], potentially reducing the risk of acute injury to the structures of the knee when landing [@Butler2003].
+
+Increased flexion in landings, however, is in turn associated with an increase in the risk of chronic knee injuries [@Derrick2004]. Tendinopathy of the patellar tendon is the most common chronic injury in jumping sports, earning the colloquial name "jumper's knee" [@Myer2015]. Patellar tendinopathy is common in other jumping sports such as volleyball and basketball [@Cook2000], affecting up to 50% of volleyball players [@Lian2005], and can be difficult enough to rehabilitate that it can end athletic careers [@Zwerver2011]. 
+
+The patellar tendon transmits the muscular force of the quadriceps muscles to the tibia, facilitating knee extension concentrically and resisting knee flexion eccentrically [@Tan2008]. Muscle force generated by the quadriceps can be up to three times larger in eccentric muscle contraction than concentric [@Stanish1986] and athletes who exhibit higher knee extensor loads are at increased risk of patellar tendinopathy [@Visnes2012]. The demanding eccentric component and high degree of knee flexion in the precision landing could, therefore, cause very high levels of patellar tendon loading [@Witvrouw2000], causing microtrauma to the tendon [@Peers2005].
+
+If not allowed time to repair, the cumulative effect of these microtraumas could mean a high risk of degenerative damage developing within the tendon [@Galloway2013]. Appropriate eccentric strengthening of the knee extensors may mitigate this [@Seynnes2009], but tendon microtrauma recovery and strength increases take time [@Prilutsky2008]. Experienced traceurs train up to an average to 12 hours per week [@Grospretre2016], a volume that may not allow for adequate tendon recovery from microtrauma [@Visnes2013a]. The precision landing technique, while potentially reducing the risk of acute ACL injury, could instead place a traceur at an increased risk of chronic patellar tendinopathy when training over an extended period.
+
+## Parkour vaults
+
+The precision landing technique is taught and encouraged not just when jumping but throughout all parkour movements. Movements in parkour are commonly taught with the cue "land quietly", with sound used as a coaching tool in the field to judge landing quality [@Standing2015]. This leads to an adoption of the precision landing as the default landing technique for all parkour movement. Consequently, the acute and chronic injury risks of precision landings may be relevant to other parkour techniques or even the sport as a whole, not solely two-legged jumping and landing tasks.
+
+One common area of movement in parkour concerns vaulting an obstacle. Parkour vault (PKV) techniques focus on traversal of an obstacle that is too high to directly jump over but not high enough to require climbing; usually between hip and shoulder height. As an example, indoor parkour training often uses gymnastic vaulting horses or tables with a standard height of 1.35 m [@deGymnastique2017]. PKVs are also often performed outdoors, over and onto solid surfaces such as concrete rather than the padded vaulting horses and crash mats used in gymnastics. As the traceur must clear the height of the obstacle to pass over it, there is potential for numerous repetitions of high GRF landings onto hard surfaces during PKV training and subsequently a high potential for injury.
+
+However, a PKV does not necessarily equate to a direct drop from the height of the obstacle. Using the hands or feet as support on the obstacle may reduce vertical drop velocity, but different levels of support provided by different PKV techniques could result in an equally varied range of GRFs. PKVs also emphasise the maintenance of horizontal speed throughout, rather than converting horizontal speed to vertical height as in a gymnastics vault [@Koh2003]. Given an emphasis on horizontal motion, the traceur's centre of mass may not follow a path directly up and down on either side of the obstacle. It may instead take a much shallower projection arc, like those seen in long jumping [@Linthorne2005], reducing the resulting drop height on the far side of an obstacle.
+
+Three common PKVs are the step vault, the kong vault, and the dash vault. The step vault involves using the hands and a foot on the obstacle to pass over it, while the kong and dash vaults only involve the use of the hands on the obstacle. Step vaults are commonly the first vault taught to beginners due to their relative safety and increased ability to control the movement throughout an extended contact time with the top of the obstacle [@Gerling2013]. The landing strategies used to exit a PKV can also vary. A traceur may come to a complete stop on two feet (precision landing style), or land with a single foot and keep moving (running landing style), often used to transition into a run or link with another technique. Even when landing on a single foot, the forefoot style landing of the precision technique is encouraged by coaches, but not exclusively depending on the preceding technique and desired outcome.
+
+Running style landings may increase the risk of acute lower limb injury in PKVs. vGRF significantly increases when switching from a two-legged to single-legged landing in drop landing tasks, with an associated increase in the risk of acute injury [@Yeow2011]. Endeavouring to maintain horizontal velocity in a running style landing may also lead to a conscious decrease in lower limb joint flexion to avoid excessive downward travel of the body. Reductions in lower limb joint flexion have been found to increase vGRF in other jumping sports such as volleyball [@Bisseling2007] and potentially contribute to lower limb injuries in gymnasts [@Seegmiller2003]. Contact time between the foot and the floor also decreases as horizontal velocity increases [@Grabowski2008]. A short ground contact time would not allow traceurs to fully apply the long eccentric phase of the precision landing technique, resulting in higher vGRFs. This could lead to a reversal of the injury scenarios posited for the precision style landing, with increased vGRFs and reduced knee flexion in running style landings increasing the risk of acute injury [@Kulig2011].
+
+As well as vGRF, landings also produce bGRF, particularly in jumping exercises involving horizontal motion [@Kossow2018]. The level of bGRF produced varies according to the movement executed prior to landing, with varied angular momentums in the air producing different bGRFs in models for gymnastic techniques [@Mills2009]. bGRF has been found to increase with greater vertical travel in a movement [@Gottschall2005], a stiffer knee joint, [@Milner2006], and an increase in horizontal speed [@Gutekunst2010]. While bGRF is less commonly associated with acute injury in jumping sports, increases in bGRFs have been linked to stress fractures in runners [@Zadpoor2011] and with patellar tendinopathy in dancers [@Fietzer2012]. @Maldonado2018 recorded bGRF in the precision landing and found that it was lower in traceurs than an untrained subject in drop landings, but still increased at greater drop heights. This indicates that frequent repetitions of high bGRFs may also be a risk factor for chronic injuries in traceurs.
+
+## Aim
+
+Such a wide variety of contributing factors mean that it is currently unclear how GRFs may vary between PKVs and landing styles. As PKVs are some of the most frequent movements traceurs perform, the forces exerted upon the body during their execution need to be understood to effectively allow safe and appropriate training. Some variable elements in PKV execution (support on the obstacle and shallow projectile arc) may reduce GRFs, while others (single leg landings, obstacle height, and reduced ground contact time) may have the inverse effect. 
+
+The aim of this study is to examine the vGRF and bGRF experienced by a single limb during three common parkour vault techniques and a drop jump of an equivalent height, performed with both two-legged precision and one-legged running style landings. The research hypothesis is that vGRF and bGRF will differ between the four movements and between landing styles.
+
+# Method
+
+## Participants
+
+Following ethical approval by the London Metropolitan University School of Human Sciences Research Ethics Review Panel and \*a priori\* power analysis (α = 0.05, β =  0.8, η^2^~p~ = 0.6), 10 parkour practitioners were recruited for this study. All participants were screened for contraindications or injuries and required a minimum of 2 years experience in parkour training [@Puddle2013]. Participants completed a CSEP Get Active Questionnaire [@Csep2017] and informed consent forms following a full explanation of the study aims and protocol.
+
+Participant characteristics are reported in Tables \@ref(tab:participant-chars-tab) and \@ref(tab:participant-cat-tab). 
+
+```{r participant-chars-tab}
+```
+
+```{r participant-cat-tab}
+```
+
+
+## Protocol
+
+Participants were instructed to attend in comfortable athletic clothing and footwear that they would normally wear for parkour training. Height was measured using a stadiometer (Leicester Height Measure, Chasmors Limited, UK) as per protocol in @Milasinovic2016. Weight and GRF data was measured using a force platform (Kistler Type 9826AA, Kistler Instrumente AG, Switzerland), connected to BioWare software (type 2182A, version 5.3.0.7).
+
+Movements were carried out using a vaulting box (Niels Larsen Ltd, UK) with a height of 0.96 m and a depth of 0.55 m. The force platform was placed on a solid floor surrounded by rubber mats to create a landing runway extending 3 m away from the vaulting box to minimise any risk of injury if landing off-target. Force plate data were collected for 8 seconds per trial at a sampling rate of 1000 Hz [@Linthorne2001].
+
+Participants were given time to warm up and to practise each movement with each landing style onto the force plate as they desired and until the satisfaction of researchers that all movements were being performed as required. Participants performed 8 movements in a sequence, consisting of a drop landing and three PKVs each executed with a two-legged stop landing (precision landing) and a single-legged landing with the preferred leg that continued into a short run (running landing). Sequences were generated and assigned using a randomised Latin square of movement combinations and a random number generator. Movement order within each sequence was arranged in a counter-balanced crossover design to mitigate fatigue and learning effects [@Moir2004]. This was repeated for a total of 3 sequences, or 24 total movements, per participant.
+
+Each participant was allowed a run-up distance comfortable to them for typical execution of each movement, mimicking field conditions [@Gratton2010]. Movements were deemed unsuccessful if the participant performed the movement and did not land, or landed only partially, on the force plate. Unsuccessful movements were repeated until successful. A 30-second rest was given between movements within a sequence and a 2-minute rest between sequences. All participants completed all their sequences in a single testing session.
+
+Movements were performed as follows:
+
+**Drop landing:** the participant crouched to full depth atop the vaulting box before dropping to the force platform.
+
+**Step vault:** the participant jumped at the box and used one hand and the contralateral foot in contact with the box, with the non-contact foot stepping through before leaving the box, as illustrated in Figure \@ref(fig:step-vault).
+
+(ref:step-vault-cap) Illustration of a step vault.
+
+<!-- Reference with \@ref(fig:step-vault) -->
+
+```{r step-vault, fig.cap="(ref:step-vault-cap)", fig.scap="Illustration of a step vault", out.width='60%'}
+
+knitr::include_graphics(here::here("book", "assets", "imgs", "step.png"))
+
+```
+
+\FloatBarrier
+
+
+**Kong vault:** the participant dived forward with their hands first, placing both hands atop the box simultaneously whilst in the air. The hands pushed off as the knees tucked into the torso and the body followed over the box, as illustrated in Figure \@ref(fig:kong-vault).
+
+(ref:kong-vault-cap) Illustration of a kong vault.
+
+<!-- Reference with \@ref(fig:kong-vault) -->
+
+```{r kong-vault, fig.cap="(ref:kong-vault-cap)", fig.scap="Illustration of a kong vault", out.width='60%'}
+
+knitr::include_graphics(here::here("book", "assets", "imgs", "kong.png"))
+
+```
+
+\FloatBarrier
+
+
+**Dash vault:** the participant jumped at the box feet first, with the feet passing over and both hands coming down to push off the box from behind the body, as illustrated in Figure \@ref(fig:dash-vault).
+
+(ref:dash-vault-cap) Illustration of a dash vault.
+
+<!-- Reference with \@ref(fig:dash-vault) -->
+
+```{r dash-vault, fig.cap="(ref:dash-vault-cap)", fig.scap="Illustration of a dash vault", out.width='60%', fig.pos="tb"}
+
+knitr::include_graphics(here::here("book", "assets", "imgs", "dash.png"))
+
+```
+
+\FloatBarrier
+
+
+
+## Statistical analysis
+
+GRF data for each movement in both vertical and anterior-posterior axes was exported from Bioware to tab-delimited text files and imported into R (version 3.5.1) in RStudio (version 1.2.1335). For each movement, peak vertical force was determined as the maximum force output recorded in the vertical axis and peak braking force as the maximum positive force recorded in the horizontal axis. Force measurements in Newtons were standardised to multiples of body weight using the formula
+
+$$
+Force\ (BW) = \frac{Force\ (N)}{Body weight\ (N)}
+$$
+
+For precision style landings, force figures were then halved to obtain estimates of the peak force experienced by a single limb during each landing [@JensenEbben2007]. The median value of the three repetitions of each movement and landing style for each participant was calculated to form the final dataset for analysis. Normality for each movement and landing style combination within each dependent variable was tested using a Shapiro-Wilk test. Time series data for all trials were normalised using interpolation for the impact phase (defined as the time from contact with the force plate to leaving the force plate or achieving a return to bodyweight levels for the single foot and double foot landings respectively) for graphical representation only.
+
+All statistical analyses were performed using R (version 3.5.1) in RStudio (version 1.2.1335). Results were analysed using a two-way repeated-measures analysis of variance (ANOVA) for each dependent variable to examine the effect of movement choice and landing style. Sphericity was checked with Mauchly's test and, if failed, a Greenhouse-Geisser correction was applied.  Simple effects analysis was performed for significant interactions by comparing means of groups from one term at all levels of the second term with a pairwise comparison test using a Holm-Bonferroni adjustment. Significance for all tests was set at α = 0.05. Partial eta-squared (η^2^~p~) was calculated for ANOVA effect sizes and Cohen's *d* with Hedge's correction *g* was calculated for all pairwise comparisons. η^2^~p~ and *g* effect sizes were interpreted using recommendations by @Lakens2013.
+
+Intraclass correlation coefficient (ICC) estimates between repetitions for each participant in each dependant variable were calculated using the IRR package [@Gamer2019] based on a single measurement, absolute agreement, 2-way mixed-effects model [@Weir2005]. ICC results were interpreted using recommendations by @Koo2016.
+
+# Results
+
+ICCs for each dependent variable across all movements are reported in Figure \@ref(fig:icc-plot). Moderate to good reliability was found for all combinations except drop (ICC = 0.41, *p* = 0.021) and dash (ICC = 0.29, *p* = 0.059) running style landings for peak vGRF, and dash (ICC = 0.49, *p* = 0.007) and kong (ICC = 0.30, *p* = 0.033) precision landings in peak bGRF.
+
+(ref:icc-plot-cap) Intraclass correlation coefficients for peak vertical (A) and braking (B) ground reaction forces for all movement and landing style combinations using a single measurement, absolute agreement, 2-way mixed-effects model. Error bars represent 95% confidence intervals. Horizontal dashed lines represent 0.5 (moderate), 0.75 (good), and 0.9 (excellent) reliability as per Koo and Li (2016).
+
+<!-- Reference with \@ref(fig:icc-plot) -->
+
+```{r icc-plot, fig.cap="(ref:icc-plot-cap)", fig.scap="Intraclass correlation coefficients", fig.asp=0.5}
+```
+
+
+Results from the two-way repeated-measures ANOVA are reported in Table \@ref(tab:anova-tab). A significant interaction effect between movement choice and landing style was found for peak vGRF (*F*~3,\ 27~ = 4.98, *p* = 0.007, η^2^~p~ = 0.36) and peak bGRF (*F*~3,\ 27~ = 12.00, *p* < 0.001, η^2^~p~ = 0.57). The main effect of movement choice was found to be highly significant for peak vGRF (*F*~3,\ 27~ = 14.14, *p* < 0.001) and peak bGRF (*F*~3,\ 27~ = 36.81, *p* < 0.001), but with a larger effect size on bGRF (η^2^~p~ = 0.80) than vGRF (η^2^~p~ = 0.61). The main effect of landing style was significant for vGRF (*F*~1,\ 9~ = 136.60, *p* < 0.001) with a large effect size (η^2^~p~ = 0.94), but was not significant for bGRF (*F*~1,\ 9~ = 0.10, *p* = 0.758) alongside a very small effect size (η^2^~p~ = 0.01).
+
+```{r anova-tab}
+```
+
+
+Results from pairwise comparison testing on the effect of switching landing style within each movement are reported in Table \@ref(tab:landing-style-tab). All movements significantly increased in peak vGRF with a large effect size when switching from precision to running landings. The step (*t* = 3.37, *p* = 0.025, *g* = 0.97) and dash (*t* = 6.10, *p* = 0.001, *g* = 1.76) vaults both significantly decreased in peak bGRF with a large effect size when switching from precision to running landings, while the drop and kong vault did not differ significantly in peak bGRF between landing styles.
+
+```{r landing-style-tab}
+```
+
+Results from pairwise comparison testing on the effect of switching movement within each landing style are reported in Table \@ref(tab:movement-choice-tab). The kong vault was significantly greater in peak vGRF and bGRF than all other movements when using a precision landing. With a running landing, the kong vault produced significantly greater peak bGRF than all other movements, but only significantly greater peak vGRF than the dash vault (*t* = -3.71, *p* = 0.024, *g* = -1.07). Though significant difference was not found, the kong vault still produced medium effect sizes on peak vGRF in comparisons to the drop (*g* = -0.71) and step (*g* = -0.86) vault with a running landing.
+
+The dash vault did not significantly differ from any movement with a precision landing other than the kong vault in either dependent variable. When using a running landing, the dash vault produced significantly lower peak bGRF than all other movements and significantly lower peak vGRF than the drop (*t* = 4.11, *p* = 0.016, *g* = 1.19) and kong vault, all with large effect sizes. The step vault was not found to significantly differ from the drop in any dependent variable in either landing style, although the effect size on peak vGRF when using a running landing was medium (*g* = 0.72) while all other effect sizes were small to negligible.
+
+```{r movement-choice-tab}
+```
+
+
+Interaction plots for both dependent variables are shown in Figure \@ref(fig:interaction-plot), highlighting in particular the increase in peak vGRF for all movements when switching from a precision to a running landing style. Figure \@ref(fig:interaction-plot) also illustrates the kong vault as resulting in the greatest GRFs of any movement in either landing style, while the dash vault results in the least. The close clustering of the drop, step vault, and dash vault movements can also be seen in both vGRF and bGRF for the precision landing style.
+
+(ref:interaction-plot-cap) Interaction plots for peak vertical (A) and braking (B) ground reaction forces. Error bars depict 95% confidence intervals for means with a Cousineau-Morey adjustment for repeated-measures studies (O'Brien and Cousineau, 2014).
+
+<!-- Reference with \@ref(fig:interaction-plot) -->
+
+```{r interaction-plot, fig.cap="(ref:interaction-plot-cap)", fig.scap="ANOVA interaction plots", fig.asp=0.5}
+```
+
+Means and standard deviations for all movement and landing style combinations are reported in full in Appendix \@ref(means-sds).
+
+# Discussion
+
+The findings in this study show that landing style (precision or running style landing) and movement choice (drop, step vault, dash vault, or kong vault) affect GRFs for parkour vaults. Landing style was found to have the greatest effect on vGRF, while movement choice had the greatest effect on bGRF. All movements significantly increased in vGRF when using a running landing. The kong vault was found to produce the greatest vGRF and bGRF, differing significantly from all other movements in bGRF when using a running landing, and in both vGRF and bGRF for precision landings. The dash vault produced the least vGRF of all movements in both landing styles, but only significantly differed from the drop and kong vault in vGRF when using a running landing. The dash also produced significantly lower bGRF than any other movement when using a running landing. The step vault was not found to differ significantly from any other movement except the kong vault in vGRF and, in particular, did not significantly differ from the drop in any dependent variable with any landing style.
+
+## Effects of landing style
+
+vGRFs for precision style drop landings were 1.57 x BW per leg in this study. These values are in line with those found by @Puddle2013 (3.2 / 2 = 1.6 x BW per leg) and @Standing2015 (3.6 / 2 = 1.8 x BW per leg) for drop landings by traceurs. @Puddle2013 used a fixed platform height of 0.75 m while @Standing2015 used a maximum drop height of 50% participant height, which the obstacle used in the present study exceeded for all participants. @Yeow2009 modelled vertical ground reaction force and drop height as a regression relationship, proposing that vGRF increases exponentially as drop height increased. This relationship has so far not been demonstrated for traceurs. Drop landing vGRFs remain similar among these studies despite height increases. However, participants in the present study were instructed to crouch fully before dropping, as opposed to standing upright and stepping off as they were in @Puddle2013 and @Standing2015. As such, the true drop heights between studies may not differ greatly if participant centre of mass is considered rather than platform height. Even so, the present study results are lower than those previously reported, despite participants not being explicitly instructed to land as softly as possible as they were in prior parkour studies. This may indicate that efforts to minimise GRFs in precision landings are habitual and automatic in experienced traceurs, adopted as a default landing strategy.
+
+While peak vGRF increased for running style drop landings, the peak vGRF found in this study remains lower (3.21 x BW) than those found in a study on single foot landings by figure skaters (3.5 x BW), which used a much lower platform height of only 0.2 m [@Saunders2014]. @Yeow2011 also found larger peak vGRFs in single-leg drop landings (4+ x BW) performed by recreational athletes with a platform height of 0.6 m. If no mitigating techniques for single-leg landings were being utilised by traceurs, it could be expected to see similar or larger vGRFs with the increase in platform height in this study. It appears that traceurs are applying techniques to minimise vGRF in single-leg landings, in similarity to the previously established findings of reduced vGRF in two-legged drop landings performed by traceurs.
+
+The knee is the primary dissipator of energy in precision landings [@Maldonado2018]. The knee has been shown to respond less effectively to single-leg landings than double-leg landings in drop jumps [@Yeow2010] and therefore higher vGRF due to the lack of knee flexion in a running style landing, regardless of movement choice, could be expected. While vGRFs did increase in running landings in this study, they were still lower than vGRFs reported for single-leg landings by other athletes. The plantar flexors of the calf have been shown to be effective at absorbing impact through the ankle joint when knee flexion is restricted, possibly even more so than when the knee can freely flex [@Self2001]. The lack of knee flexion may instead shift responsibility onto the other joints of the lower limb to absorb vGRF. As such, it may not solely be the long duration of eccentric loading of the quadriceps and hip muscles that contributes to reduced vGRFs in traceur landings, but also contributions from an effectively engaged calf complex due to a raised heel.
+
+It should be noted that cited studies utilised a stop landing on a single-leg, whereas the present study utilised a running style single-leg landing. @Yeow2011 also found that frontal plane energetics increased in single-legged stop landing tasks due to the increased demand for stability, which could not be as effectively dissipated as sagittal energetics due to the lack of range of motion in the knee joint in that plane. It may be that continued motion when landing on one leg decreases the need to seek stability compared to a stop landing, similar to how increased speed requires less rider input to keep a bicycle upright [@Sharp2008]. Future research may consider the effect of various speeds when exiting a vault and the effect on GRF, particularly in running style landings.
+
+## Parkour vault characteristics
+
+The kong vault resulted in significantly greater vGRFs and bGRFs than all other movements with a precision landing, and even in comparisons that did not achieve significance, always produced at least a medium to large effect size. This may be due to the need for an increase in height of the traceur's centre of mass to allow space for the knees and feet to pass over the obstacle, increasing the height of the drop on the landing side. Yet, the increase in vGRF is greater than could be expected for the relatively small height gain needed to clear the obstacle with a kong vault, given the similarity between vGRFs for drop landings from different heights discussed above. The diving nature of the movement may also increase horizontal speed, with a resultant increase in bGRF on landing. This diving execution also places the traceur in a flexed hip position once over the obstacle, with a more anteriorly tilted trunk. Trunk flexion is an important contributor to mitigating landing GRFs [@Blackburn2008] and, as drop heights increase, the role of proximal joints in energy dissipation also increases [@Nordin2017]. Reduced hip flexion range due to an already anteriorly tilted trunk when landing may result in a decreased ability for the hip to contribute to energy dissipation and result in greater GRFs. Further, vGRF for the kong was not significantly greater than a drop landing when using a running landing style. The need to stretch the landing leg towards the ground and raise the trunk into a running stance would extend the hip joint, differentiating it from a kong performed with a precision landing. However the role of trunk position in landing is still being investigated, with an overly upright trunk on landing shown to increase knee valgus angles and the risk of ACL injury [@Saito2020]. The role of trunk position in PKVs could be further studied through kinematic 2D or 3D motion tracking of traceurs paired with kinetic GRF analysis.
+
+Although consistently producing the least GRFs of any movement, performance of the dash vault varied between the two landing styles. Dash vaults with precision landings did not differ from the drop or step vault in vGRF; however in running style landings, the dash vault was found to produce significantly lower vGRFs than the drop landing and kong vault and lower bGRFs than all other movements. This may be due to the differing levels of support provided by the hands on the obstacle as the traceur descends to land. In a running dash vault, the leading leg reaches the floor before the hands leave the obstacle, while in a precision landing both hands leave the obstacle before landing occurs. Further, due to the sole use of the hands on the obstacle without a concurrent trailing lower limb, this ability to reach for the floor before the supporting limbs leave the obstacle is maintained for a greater height than the step vault. This may indicate that the longer a traceur can maintain support on the obstacle behind them, the greater the contribution of the upper limbs to reductions in vGRF. In turn, this may increase the risk of wrist injury in the dash vault, with GRFs through the hands in some high-intensity gymnastic vaults found to exceed 1.3 x BW [@Penitente2015b]. Further research on the forces experienced in the upper limb during PKVs may reveal more about this relationship and provide insight on potential upper limb injury risks inherent to PKVs.
+
+The step vault did not significantly differ from a drop of equivalent height in peak vGRF or bGRF for either landing style, although there was still a moderate effect on the reduction of peak vGRF with the step vault when using a running landing. The height of the obstacle used in these trials may have affected this outcome. The step vault technique requires reaching down to the ground while one foot and hand remains behind the traceur on the obstacle. If the obstacle is sufficiently low enough that the reaching foot can contact the floor without the trailing limbs leaving the obstacle, then more support may be provided to the landing foot. This was not possible for all participants due to height differences, with the trailing limbs leaving the obstacle before contact was made with the floor. Execution of the step vault in this study also tried to simulate typical use of a step vault as part of a route, resulting in performance at speed. Moderating the speed a movement is performed can increase control of that movement [@Frost2015]. Moderation of speed of execution, with an effort to more deliberately lower the leading foot to the floor with prolonged support of the hand and foot on the obstacle, could result in lower GRFs for the step vault. Nonetheless, the step vault is often taught as a beginner vault, and so this finding may be of importance in determining the risk of injury for new practitioners. As such, the step vault should not be considered the absolute safest or least impactful of the PKVs by default. Due care and attention to obstacle height and speed of execution should be considered when teaching the step vault to beginners to mitigate the risk of exposing them to larger GRFs before they are physically prepared for them.
+
+## Implications for injury risk
+
+The results of this study show that, despite still displaying an ability to mitigate landing forces when landing on a single limb, a traceur does increase GRFs when utilising a running landing compared to a precision landing. Yet, vGRF figures reported in this study are lower than those reported in traditional flat running of around 3 x BW [@Trowell2019] for the step and dash vault and only slightly above it for the kong vault. Such levels of GRF are considered unlikely to cause acute injury through impact alone [@Kuntze2009]. This is in agreement with a survey by @Wanke2013 whereby traceurs reported that most acute parkour injuries occurred due to misjudgement or overestimation rather than impact trauma in an otherwise ideal landing scenario. Consequently, the overall risk of acute injury to the lower limb with single-leg running style landings likely remains low for experienced traceurs.
+
+However, chronic injury remains a potential risk for traceurs of all levels. Frequent exposure to the vGRF and bGRF levels found in this study for both precision and running style landings could place an athlete at risk of chronic injury [@Hreljac2004]. To that end, the GRF results obtained in this study have allowed the development of a rudimentary intensity index between all four movements across both landing styles, demonstrated in Figure \@ref(fig:intensity-plot). A drop precision landing is used as a baseline intensity of 1 for both vGRF and bGRF, with all other movements standardised to this same scale using the formulas
+
+$$
+Drop\ Precision\ Intensity\ (BW) = \frac{\sum\limits_{i=1}^{n} \ Drop\ Precision_{i}\ (BW)}{n}
+$$
+
+$$
+Intensity\ X = \frac{\sum\limits_{i=1}^{n}\ X_i\ (BW)}{Drop\ Precision\ Intensity\ (BW)}
+$$
+
+Parkour is a developing sport. Practitioners and coaches rely mostly on personal subjective experience to effectively determine the appropriate intensity of training. An intensity index could instead be used as a tool in the field to objectively control training intensity alongside traditional training parameters such as volume and frequency [@Wallace2010]. Given the limitations and scope of the present study, this index is presented as an example only. Further development of an index utilising such things as different heights, speeds, landing distances, and a wider subject pool may further aid in developing it as a useful tool for field use.
+
+(ref:intensity-plot-cap) Intensity plots for peak vertical (A) and braking (B) ground reaction forces, standardised with the drop precision landing as an intensity of 1.
+
+<!-- Reference with \@ref(fig:intensity-plot) -->
+
+```{r intensity-plot, fig.cap="(ref:intensity-plot-cap)", fig.scap="Intensity plots", fig.asp=0.5}
+```
+
+
+
+## Limitations
+
+As can be seen in Figure \@ref(fig:icc-plot), ICCs for movement and landing style combinations varied; while most achieved at least a 'moderate' reliability, confidence intervals were broad for all groups. Visual analysis of the force profiles for the three trials of each combination for each participant seemed to show a trend where, if the peak values were not evenly spaced, one trial would be noticeably above or below the other two. It appears that vaulting movements may be highly variable in execution, even amongst experienced practitioners, although some limitations in this study may also have affected this result. While practitioners were instructed to keep run-up distances the same for each movement repetition, this was not strictly measured and standardised. Variations in run-up distance may have contributed to intra-participant variation between trials. Participants also attended in their own footwear, which may have contributed to inter-participant differences due to differing levels of cushioning affecting the amount of GRFs absorbed by the sole [@Cheung2008].
+
+One phenomenon of the data noted on examination of the force curves is the presence of multiple force peaks in the vertical axis. Multiple vGRF peaks in a drop landing are common, with the first peak commonly representing toe contact, the second peak for heel contact, and the third peak for muscle activation slowing descent [@Bauer2001]. Usually the second peak is the largest, but in the present study this was not always the case, with the first peak sometimes exceeding the second. This may be due to the lack of heel contact during a precision technique landing. The present study did not distinguish between maximum vGRF occurring at the first or second peak. As a result, the maximum vGRF for some movements and landing styles was taken from the first peak and some from the second. Future studies may wish to isolate the peaks to determine how each contributes to the energy dissipation of a landing. In particular, if the goal is to analyse the rate of force development (RFD) in these movements, careful analysis of the patterns of peaks presenting should be considered to ensure correct RFD calculations.
+
+Single limb GRFs were estimated for the precision landing style by halving the measurements obtained from both legs on the force platform, with the assumption that participants have no bilateral asymmetries in their lower limbs. While measuring GRFs with two feet and halving the figure is not expected to give an exact figure for the peak GRF of a single limb due to small timing difference between limbs, it is shown to produce results close to modelled figures for single-legged landings [@Niu2014]. Two-legged landings in the precision style usually involve keeping the ankles close together; splitting the feet across two force plates, while potentially improving single limb GRF measurement accuracy, may result in altered landing mechanics and a loss of validity. Nonetheless the figures obtained for the force per single limb in precision landings used in this study should be considered with this possible degree of imprecision in mind.
+
+Ensuring ecological and external validity [@Pinder2011] when studying parkour movement is difficult due to the inherent free-form nature of the sport and the many different environments in which it is practised. This study has attempted to examine some of the most commonly observed parkour vaults and landing styles, but a wide variety remains. Precise execution of the same technique may vary between traceurs, determined by their training history and practice rather than some agreed-upon, centrally-defined, method. Only 10 traceurs participated in this study, many of whom had previously trained together. Traceurs from other social groups, locales, and demographics may have developed different approaches to techniques and their execution with different landing styles. 
+
+There is currently no widely accepted standardisation of parkour movement, either in the form of a rulebook for a competitive event, guidelines from a governing body, or even in some cases, a common consensus among traceurs. Therefore in order to study parkour, some constraints have to be selected by researchers and placed upon the wide variety of parkour movements available for a given task. It is important to the nature of the sport that these efforts to constrain movements for study are purely descriptive, and not intended to prescribe or restrict parkour movement in any fashion beyond the scope of the study being undertaken.
+
+The obstacle height and distance from the force plate may have artificially constrained the performance of some techniques, with some participants describing the landing point as being too close for regular execution of some movements and some landing styles. In some ways this may increase ecological validity for the study, as when performing parkour outside there is a similar inability to adjust your choice of landing distance - a traceur cannot move a brick wall or a steel railing forward to be more accommodating. But a traceur's movement choice is dictated not just by preference, but by the environment and their reaction to it [@Croft2017]. A certain technique may better suit a desired landing distance. Such difference may be dictated by the projectile path that the participant takes over the obstacle, similar to changing the projectile arc for a ball to better hit a target in a certain plane. Future studies on the projectile motion of traceurs during the execution of vaults to different landing distances could investigate the task-specific suitability of individual vaults.
+
+# Conclusion
+
+Movement choice and landing style affect landing GRFs for common parkour vaulting techniques. vGRFs increase when switching from a precision style landing to a running style landing, regardless of PKV choice. The kong vault was found to produce the greatest vGRF and bGRF of all PKVs in both landing styles, while the dash vault produced the least vGRF and bGRF of all PKVs. The step vault was not found to significantly differ from a drop landing with either landing style.
+
+Traceurs mimic their performance in two-legged drop landings and continue to effectively mitigate landing forces when vaulting with both precision and running style landings. As a result, traceurs are unlikely to be at risk of acute lower limb injury with the force levels produced but remain at risk of chronic lower limb injury caused by high repetitions of vaulting movements. The development of an intensity index is proposed as a possible field tool for coaches and athletes to appropriately plan parkour training sessions to minimise the risk of chronic injury.
+
+\newpage
+
+```{r references, child=if (git) here::here('book', 'src', '_refs.Rmd')}
+```
+
+\thispagestyle{empty}
+
+\part{References}
+
+\newpage
+
+::: {#refs}
+:::
+
+\newpage
+
+
+\clearpage
+
+```{r appendices, child=if (git) here::here('book', 'src', '_appendices.Rmd')}
+```
+
+\thispagestyle{empty}
+
+\part{Appendices}
+
+\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesubsection{\thesection.\roman{subsection}}
+
+\newpage
+
+
+# Means and standard deviations for all groups {#means-sds}
+
+```{r means-sds-tab}
+```

@@ -1,0 +1,18 @@
+bookdown::pdf_document2:
+  pandoc_args: [ "--csl", "book/bib/citethemright10th.csl", "-f", "markdown+raw_tex" ]
+  # to use the coloured boxes shortcodes, comment out the above and uncomment the below
+  # remember to also uncomment tcolorbox lines in preamble.tex
+  # pandoc_args: [ "--csl", "book/bib/citethemright10th.csl",
+  # "-f", "markdown+raw_tex",
+  # "-M", "colorlinks",
+  # "-M", "linkcolor=black",
+  # "--lua-filter", "book/filters/shortcodes.lua"]
+  keep_tex: true
+  keep_md: true
+  latex_engine: lualatex
+  toc: false
+  # comment or uncomment the below to turn numbering of all sections on/off
+  number_sections: true
+  includes:
+      in_header: "book/assets/latex/preamble.tex"
+      before_body: "book/assets/latex/before-body.tex"

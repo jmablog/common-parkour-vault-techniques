@@ -1,0 +1,80 @@
+/* Beige colours:
+:root {
+  --book-bg: #FFFFF4;
+  --nav-bg: #FFF9EA;
+}
+*/
+
+/* Grey colors: */
+:root {
+  --book-bg: #FAFAFA;
+  --nav-bg: #F4F4F5;
+}
+
+.figure .caption {
+  color: #777;
+  margin: 0 0 20px 0 !important;
+}
+
+caption {
+  color: #777;
+  margin: 20px 0 10px 0;
+}
+
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+img {
+  margin: 40px 0;
+}
+
+blockquote {
+  opacity: 1 !important;
+  margin: 2em 30px !important;
+}
+
+blockquote p::before {
+  content: '"';
+}
+
+blockquote p::after {
+  content: '"';
+}
+
+img {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Main book: */
+.book .book-body {
+  background-color: var(--book-bg);
+}
+
+section {
+  color: #1D1D30 !important;
+  background-color: var(--book-bg) !important;
+}
+
+/*
+.book .book-body .page-wrapper .page-inner section {
+  background-color: var(--book-bg);
+}
+*/
+
+/* Navigation: */
+.book .book-summary {
+  background-color: var(--nav-bg);
+}
+
+/* Header: */
+.book .book-header.fixed {
+  background-color: var(--book-bg) !important;
+}
