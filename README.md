@@ -6,6 +6,8 @@ This is a [Bookdown](https://bookdown.org/) project, in [R](https://www.r-projec
 
 ## Steps for reproducing from source with R
 
+This project was built with R version 4.0.2.
+
 - Clone this directory to your local machine.
 - If using Rstudio, open the .Rproj file in the base project directory. Otherwise, set the working directory to the base project directory in R. If not using Rstudio, you may need to also manually install [Pandoc](https://pandoc.org/).
 - If not already installed, install the [renv](https://rstudio.github.io/renv/) and [devtools](https://devtools.r-lib.org/) R packages. See those package sites for installation instructions.
