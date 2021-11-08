@@ -1,13 +1,9 @@
-Package: common-parkour-vault-techniques
-Title: Common parkour vault techniques
-Type: Compendium
-Version: 0.0.1
-Authors@R: 
-    person(given = "James",
-           family = "Adams",
-           role = c("aut", "cre"),
-           email = "james@jmablog.com")
-Description: What the package does (one paragraph).
+Package: pkvs
+Title: Common Parkour Vault Techniques
+Version: 1.0
+Authors@R: person(given = "James", "Adams", role = c("aut", "cre"), email = "james@jmablog.com")
+Maintainer: James Adams <james@jmablog.com>
+Description: Reproducible research environment in R to build the study report, "Common parkour vault techniques, landing styles, and their effects on landing forces".
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

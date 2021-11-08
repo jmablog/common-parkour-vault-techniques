@@ -4,16 +4,17 @@ This repository is all the code, analysis, and text that goes into building my u
 
 This is a [Bookdown](https://bookdown.org/) project, in [R](https://www.r-project.org/).
 
-## Steps for reproducing from source
+## Steps for reproducing from source with R
 
 - Clone this directory to your local machine.
 - If using Rstudio, open the .Rproj file in the base project directory. Otherwise, set the working directory to the base project directory in R. If not using Rstudio, you may need to also manually install [Pandoc](https://pandoc.org/).
 - If not already installed, install the [renv](https://rstudio.github.io/renv/) and [devtools](https://devtools.r-lib.org/) R packages. See those package sites for installation instructions.
-- Run `renv::restore()` to install all the required packages used in this project in a local renv directory. This should not impact your regular R package library, but may take a little while.
-- Run `devtools::load_all()` to load the custom functions I have written for this project.
-- Run `build_book()` to build the book into the folder `book/builds/{date}`. `build_book`accepts the following arguments:
-  - `format`: string, default "print". One of "all", "print", "web", "gitbook", "pdf", or "word". "all" produces gitbook, pdf, and word outputs. "print" produces just pdf and word outputs. "web" produces gitbook and pdf outputs. Individual output selections produces just that output.
-  - `word_num`: boolean, default FALSE. Set if Word output should have numbered sections or not.
+- Open the file `create_report.R` for the stages required to build the report, as detailed below:
+  - Run `renv::activate()` followed by `renv::restore()` to install all the required packages used in this project in a local renv directory. This should not impact your regular R package library, but may take a little while.
+  - Run `devtools::load_all()` to load the custom functions I have written for this project.
+  - Run `build_book()` to build the book into the folder `book/builds/{date}`. `build_book`accepts the following arguments:
+    - `format`: string, default "print". One of "all", "print", "web", "gitbook", "pdf", or "word". "all" produces gitbook, pdf, and word outputs. "print" produces just pdf and word outputs. "web" produces gitbook and pdf outputs. Individual output selections produces just that output.
+    - `word_num`: boolean, default FALSE. Set if Word output should have numbered sections or not.
 
 **Note:** The original work was written targeting PDF and gitbook output, so Word output may be broken or messy.
 

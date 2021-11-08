@@ -4,4 +4,3 @@
 # file, which will also allow devtools::install_deps() to work as an alternative
 # install method.
 library(devtools)
-library(todor)
