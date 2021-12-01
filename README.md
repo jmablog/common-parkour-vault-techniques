@@ -1,5 +1,7 @@
 # Common parkour vault techniques, landing styles, and their effects on landing forces
 
+[![DOI](https://zenodo.org/badge/425025212.svg)](https://zenodo.org/badge/latestdoi/425025212)
+
 This repository is all the code, analysis, and text that goes into building my undergraduate dissertation, "Common parkour vault techniques, landing styles, and their effects on landing forces", available to read online here: https://jmablog.com/research/pkvs/
 
 This is a [Bookdown](https://bookdown.org/) project, in [R](https://www.r-project.org/).
